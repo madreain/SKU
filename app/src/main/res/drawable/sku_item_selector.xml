@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--点击选中-->
+    <item android:state_selected="true">
+        <shape>
+            <corners android:radius="@dimen/dp4" />
+            <stroke android:width="@dimen/dp1"
+                android:color="@color/m40FE5002"
+                />
+            <solid android:color="@color/m08FE5002" />
+        </shape>
+    </item>
+    <!--不可点击状态-->
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="@dimen/dp4" />
+            <solid android:color="@color/m042F2F39" />
+        </shape>
+    </item>
+    <!--可点击状态-->
+    <item>
+        <shape>
+            <corners android:radius="@dimen/dp4" />
+            <solid android:color="@color/m042F2F39" />
+        </shape>
+    </item>
+</selector>

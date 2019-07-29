@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="m2F2F39">#2f2f39</color>
+    <color name="m202F2F39">#332F2F39</color>
+    <color name="m042F2F39">#0A2F2F39</color>
+    <color name="mFE5002">#FE5002</color>
+    <color name="m40FE5002">#66FE5002</color>
+    <color name="m08FE5002">#14FE5002</color>
+
+    <color name="comm_text_gray_light">#999999</color>
+    <color name="comm_text_gray">#666666</color>
+    <color name="comm_text_gray_dark">#333333</color>
+
+</resources>

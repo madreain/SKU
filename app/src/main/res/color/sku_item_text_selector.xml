@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--点击选中-->
+    <item android:color="@color/mFE5002" android:state_selected="true" />
+    <!--不可点击状态-->
+    <item android:color="@color/m202F2F39" android:state_enabled="false" />
+    <!--可点击状态-->
+    <item android:color="@color/m2F2F39" />
+</selector>
