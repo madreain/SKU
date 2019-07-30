@@ -47,12 +47,12 @@ public class SkuMaxHeightScrollView extends ScrollView {
                 height = h;
         }
         float heightDp = DisplayUtil.px2dp(getContext(), height);
-        maxHeight = DisplayUtil.dp2px(getContext(), maxHeight);
-        minHeight = DisplayUtil.dp2px(getContext(), minHeight);
-        if (heightDp > maxHeight) {
-            setMeasuredDimension(width, maxHeight);
-        } else if (heightDp < minHeight) {
-            setMeasuredDimension(width, minHeight);
+        int skumaxHeight = DisplayUtil.dp2px(getContext(), maxHeight);
+        int skuminHeight = DisplayUtil.dp2px(getContext(), minHeight);
+        if (heightDp > skumaxHeight) {
+            setMeasuredDimension(width, skumaxHeight);
+        } else if (heightDp < skuminHeight) {
+            setMeasuredDimension(width, skuminHeight);
         } else {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         }
