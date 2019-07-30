@@ -157,10 +157,6 @@ public class ProductSkuDialog extends Dialog {
                 //默认第一张照片
                 GlideApp.with(context).load(product.getPictureUrl()).into(ivSkuLogo);
                 tvSkuQuantity.setText(String.format(stockQuantityFormat, product.getStockQuantity()));
-//                String firstUnselectedAttributeName = scrollSkuList.getFirstUnelectedAttributeName();
-//                tvSkuInfo.setText("请选择：" + firstUnselectedAttributeName);
-//                btnSubmit.setEnabled(false);
-
                 String selected = getSelected();
                 //设置回掉
                 callback.onSelect(selected);
@@ -183,9 +179,6 @@ public class ProductSkuDialog extends Dialog {
 
             @Override
             public void onSelect(SkuAttribute selectAttribute) {
-//                String firstUnselectedAttributeName = scrollSkuList.getFirstUnelectedAttributeName();
-//                tvSkuInfo.setText("请选择：" + firstUnselectedAttributeName);
-
                 String selected = getSelected();
                 //设置回掉
                 callback.onSelect(selected);
