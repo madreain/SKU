@@ -38,7 +38,7 @@ SKU相关数据大致如下，其他参数可根据自身项目自由扩展
 
 ```
 
-### 相关设置：
+### 相关设置
 
 1.不同状态显示的设置
 sku_item_text_selector.xml                   sku单item字体显示的三种状态设置
@@ -60,5 +60,8 @@ SkuMaxHeightScrollView中可在xml中设置maxSkuHeight、minSkuHeight，而SkuS
      app:minSkuHeight="88"
      android:layout_marginTop="5dp" />
 ```
+
+### 相关函数
+
 
 

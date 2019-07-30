@@ -53,7 +53,7 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
      *
      * @param listener {@link OnSkuListener}
      */
-    public void setListener(OnSkuListener listener) {
+    public void setOnSkuListener(OnSkuListener listener) {
         this.listener = listener;
     }
 

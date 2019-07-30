@@ -154,7 +154,7 @@ public class ProductSkuDialog extends Dialog {
             }
         });
         //sku整体的点击事件
-        scrollSkuList.setListener(new OnSkuListener() {
+        scrollSkuList.setOnSkuListener(new OnSkuListener() {
             @Override
             public void onUnselected(SkuAttribute unselectedAttribute) {
                 selectedSku = null;
