@@ -63,5 +63,24 @@ SkuMaxHeightScrollView中可在xml中设置maxSkuHeight、minSkuHeight，而SkuS
 
 ### 相关函数
 
+```
+scrollSkuList.setOnSkuListener(new OnSkuListener() {
+            @Override
+            public void onUnselected(SkuAttribute unselectedAttribute) {
+            
+            }
 
+            @Override
+            public void onSelect(SkuAttribute selectAttribute) {
+              
+            }
+
+            @Override
+            public void onSkuSelected(Sku sku) {
+             
+            }
+        });
+```
+
+根据不同业务场景对监听方法做处理
 
