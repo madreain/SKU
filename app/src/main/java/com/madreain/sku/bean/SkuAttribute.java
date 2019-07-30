@@ -49,17 +49,30 @@ public class SkuAttribute implements Parcelable {
                 '}';
     }
 
+    /**
+     * 描述
+     * @return
+     */
     @Override
     public int describeContents() {
         return 0;
     }
 
+    /**
+     * 反序列化
+     * @param dest
+     * @param flags
+     */
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.key);
         dest.writeString(this.value);
     }
 
+    /**
+     * 序列化
+     * @param in
+     */
     protected SkuAttribute(Parcel in) {
         this.key = in.readString();
         this.value = in.readString();

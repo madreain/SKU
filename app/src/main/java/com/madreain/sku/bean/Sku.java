@@ -80,11 +80,20 @@ public class Sku implements Parcelable {
 
     }
 
+    /**
+     * 描述
+     * @return
+     */
     @Override
     public int describeContents() {
         return 0;
     }
 
+    /**
+     * 反序列化
+     * @param dest
+     * @param flags
+     */
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeLong(this.sid);
@@ -93,6 +102,10 @@ public class Sku implements Parcelable {
         dest.writeTypedList(this.attributes);
     }
 
+    /**
+     * 序列化
+     * @param in
+     */
     protected Sku(Parcel in) {
         this.sid = in.readLong();
         this.price = in.readFloat();
