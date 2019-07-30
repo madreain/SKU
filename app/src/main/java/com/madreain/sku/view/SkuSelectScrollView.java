@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 
 import com.madreain.sku.bean.Sku;
 import com.madreain.sku.bean.SkuAttribute;
-import com.madreain.sku.widget.SkuMaxHeightScrollView;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;

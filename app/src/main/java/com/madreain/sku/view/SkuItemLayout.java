@@ -13,7 +13,6 @@ import android.widget.TextView;
 import com.madreain.sku.R;
 import com.madreain.sku.bean.SkuAttribute;
 import com.madreain.sku.utils.DisplayUtil;
-import com.madreain.sku.widget.FlowLayout;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.madreain.sku.widget;
+package com.madreain.sku.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
