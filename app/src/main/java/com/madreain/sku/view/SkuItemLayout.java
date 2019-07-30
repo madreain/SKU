@@ -72,14 +72,14 @@ public class SkuItemLayout extends LinearLayout {
         attributeValueLayout.setLayoutParams(attributeValueParams);
         addView(attributeValueLayout);
 
-//        View line = new View(context);
-//        line.setBackgroundResource(R.color.comm_line);
-//        LayoutParams lineParams = new LayoutParams(LayoutParams.MATCH_PARENT, 1);
-//        lineParams.leftMargin = DisplayUtil.dp2px(context, 15);
-//        lineParams.rightMargin = DisplayUtil.dp2px(context, 15);
-//        lineParams.topMargin = DisplayUtil.dp2px(context, 5);
-//        line.setLayoutParams(lineParams);
-//        addView(line);
+        View line = new View(context);
+        line.setBackgroundResource(R.color.m202F2F39);
+        LayoutParams lineParams = new LayoutParams(LayoutParams.MATCH_PARENT, 1);
+        lineParams.leftMargin = DisplayUtil.dp2px(context, 15);
+        lineParams.rightMargin = DisplayUtil.dp2px(context, 15);
+        lineParams.topMargin = DisplayUtil.dp2px(context, 5);
+        line.setLayoutParams(lineParams);
+        addView(line);
     }
 
     public void setListener(OnSkuItemSelectListener listener) {

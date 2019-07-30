@@ -1,12 +1,12 @@
 {
-  "pid": 1,
+  "pid": 10001,
   "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=95d3036dc6282a14fda223c3b55284be&imgtype=0&src=http%3A%2F%2Fimg4.vipshop.com%2Fupload%2Fmerchandise%2F27600%2FZIMMUR-ZMCQ2028-2.jpg",
   "stockQuantity": 939,
   "maxPrice": 199.0000,
   "minPrice": 699.0000,
   "skus": [
     {
-      "sid": 1,
+      "sid": 10001,
       "price": 199.0000,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=95d3036dc6282a14fda223c3b55284be&imgtype=0&src=http%3A%2F%2Fimg4.vipshop.com%2Fupload%2Fmerchandise%2F27600%2FZIMMUR-ZMCQ2028-2.jpg",
       "stockQuantity": 133,
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "sid": 2,
+      "sid": 10002,
       "price": 399.0000,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=76331db1c1a7b9edad2583bd95d7e634&imgtype=0&src=http%3A%2F%2Fi1.ygimg.cn%2Fpics%2Fnowhere%2F2013%2F99862821%2F99862821_01_l.jpg",
       "stockQuantity": 333,
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "sid": 3,
+      "sid": 10003,
       "price": 199.0000,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=9d33c2c3adbf9d6af01f589777cd0bff&imgtype=0&src=http%3A%2F%2Fimg2.vipshop.com%2Fupload%2Fmerchandise%2F34424%2FZIMMUR-Z12CQW145WC-2.jpg",
       "stockQuantity": 23,
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "sid": 4,
+      "sid": 10004,
       "price": 499.0000,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=ada65d9d4dbbfaf5e46944f469c64ebf&imgtype=0&src=http%3A%2F%2Fwww.bjzwx.com%2Fuploadfile%2F2017%2F1219%2F20171219082705892.jpg",
       "stockQuantity": 323,
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "sid": 5,
+      "sid": 10005,
       "price": 699.0000,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=158716506d68be6d18f033ab6a6518a7&imgtype=0&src=http%3A%2F%2Fa.vpimg3.com%2Fupload%2Fmerchandise%2F120170%2FOSA-SW332654065A-1.jpg",
       "stockQuantity": 3,
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "sid": 6,
+      "sid": 10006,
       "price": 699.0000,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=f5851b42bed9833f5f9e2a8884d027d8&imgtype=0&src=http%3A%2F%2Fimg.11665.com%2Fimg04_p%2Fi4%2FT1EX43FrFnXXXXXXXX_%2521%25210-item_pic.jpg",
       "stockQuantity": 1,
@@ -102,7 +102,7 @@
       ]
     },
     {
-      "sid": 7,
+      "sid": 10007,
       "price": 699.0000,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
       "stockQuantity": 123,
@@ -113,6 +113,182 @@
         },
         {
           "value": "粉红色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10008,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "S",
+          "key": "尺码"
+        },
+        {
+          "value": "粉红色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10010,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XS",
+          "key": "尺码"
+        },
+        {
+          "value": "粉红色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10011,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XXL",
+          "key": "尺码"
+        },
+        {
+          "value": "粉红色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10012,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XXXL",
+          "key": "尺码"
+        },
+        {
+          "value": "粉红色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10013,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XL",
+          "key": "尺码"
+        },
+        {
+          "value": "大红色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10014,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XL",
+          "key": "尺码"
+        },
+        {
+          "value": "橙色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10015,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XL",
+          "key": "尺码"
+        },
+        {
+          "value": "咖啡色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10016,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XL",
+          "key": "尺码"
+        },
+        {
+          "value": "橘黄色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10017,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XL",
+          "key": "尺码"
+        },
+        {
+          "value": "海蓝色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10018,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XL",
+          "key": "尺码"
+        },
+        {
+          "value": "宝蓝色",
+          "key": "颜色"
+        }
+      ]
+    },
+    {
+      "sid": 10019,
+      "price": 699.0000,
+      "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
+      "stockQuantity": 123,
+      "attributes": [
+        {
+          "value": "XL",
+          "key": "尺码"
+        },
+        {
+          "value": "墨绿色",
           "key": "颜色"
         }
       ]
