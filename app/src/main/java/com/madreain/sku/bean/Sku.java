@@ -15,13 +15,23 @@ import java.util.List;
 @Keep
 public class Sku implements Parcelable {
 
-    private int price;
+    private long sid;
+
+    private float price;
 
     private String pictureUrl;
 
     private List<SkuAttribute> attributes;
 
     private int stockQuantity;
+
+    public long getSid() {
+        return sid;
+    }
+
+    public void setSid(long sid) {
+        this.sid = sid;
+    }
 
     public int getStockQuantity() {
         return stockQuantity;
@@ -31,10 +41,11 @@ public class Sku implements Parcelable {
         this.stockQuantity = stockQuantity;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
-    public void setPrice(int price) {
+
+    public void setPrice(float price) {
         this.price = price;
     }
 
@@ -57,9 +68,11 @@ public class Sku implements Parcelable {
     @Override
     public String toString() {
         return "Sku{" +
+                "sid=" + sid +
                 ", price=" + price +
                 ", pictureUrl='" + pictureUrl + '\'' +
                 ", attributes=" + attributes +
+                ", stockQuantity=" + stockQuantity +
                 '}';
     }
 
@@ -74,13 +87,15 @@ public class Sku implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.price);
+        dest.writeLong(this.sid);
+        dest.writeFloat(this.price);
         dest.writeString(this.pictureUrl);
         dest.writeTypedList(this.attributes);
     }
 
     protected Sku(Parcel in) {
-        this.price = in.readInt();
+        this.sid = in.readLong();
+        this.price = in.readFloat();
         this.pictureUrl = in.readString();
         this.attributes = in.createTypedArrayList(SkuAttribute.CREATOR);
     }

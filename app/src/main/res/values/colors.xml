@@ -9,9 +9,8 @@
     <color name="mFE5002">#FE5002</color>
     <color name="m40FE5002">#66FE5002</color>
     <color name="m08FE5002">#14FE5002</color>
-
-    <color name="comm_text_gray_light">#999999</color>
-    <color name="comm_text_gray">#666666</color>
-    <color name="comm_text_gray_dark">#333333</color>
+    <color name="mBBBBBB">#bbbbbb</color>
+    <color name="m666666">#666666</color>
+    <color name="m333333">#333333</color>
 
 </resources>

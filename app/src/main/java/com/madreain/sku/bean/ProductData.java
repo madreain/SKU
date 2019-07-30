@@ -23,20 +23,31 @@ import java.util.List;
 @Keep
 public class ProductData {
 
+    //商品id
+    private long pid;
+
     //主图url
     private String pictureUrl;
 
     //最高价格
-    private int maxPrice;
+    private float maxPrice;
 
     //最低价格
-    private int minPrice;
+    private float minPrice;
 
     //sku属性
     private List<Sku> skus;
 
     //数量
     private int stockQuantity;
+
+    public long getPid() {
+        return pid;
+    }
+
+    public void setPid(long pid) {
+        this.pid = pid;
+    }
 
     public int getStockQuantity() {
         return stockQuantity;
@@ -83,19 +94,19 @@ public class ProductData {
         this.pictureUrl = pictureUrl;
     }
 
-    public int getMaxPrice() {
+    public float getMaxPrice() {
         return maxPrice;
     }
 
-    public void setMaxPrice(int maxPrice) {
+    public void setMaxPrice(float maxPrice) {
         this.maxPrice = maxPrice;
     }
 
-    public int getMinPrice() {
+    public float getMinPrice() {
         return minPrice;
     }
 
-    public void setMinPrice(int minPrice) {
+    public void setMinPrice(float minPrice) {
         this.minPrice = minPrice;
     }
 

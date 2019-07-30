@@ -250,7 +250,7 @@ public class ProductSkuDialog extends Dialog {
         this.skuList = product.getSkus();
         this.callback = callback;
         priceFormat = context.getString(R.string.comm_price_format);
-        stockQuantityFormat = context.getString(R.string.product_detail_sku_stock);
+        stockQuantityFormat = context.getString(R.string.sku_stock);
         updateSkuData();
         updateQuantityOperator(1);
     }

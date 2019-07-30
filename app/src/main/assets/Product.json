@@ -1,36 +1,13 @@
 {
-  "id": 1,
-  "code": "0cd26422eeafff43",
-  "specTag": true,
-  "operatorId": null,
-  "shopId": null,
-  "name": "111TNPE 2019 SPRING/SUMMER",
-  "categoryId": 1,
-  "summary": "“新话”绿松石蓝/浅灰色假两件印花T恤",
-  "label": "时尚#潮流",
-  "discountFlag": false,
-  "houseArea": 7,
-  "sellTimeLimitFlag": true,
-  "sellTimeStart": "2019-07-04 08:00:00",
-  "sellTimeEnd": "2019-07-20 08:00:00",
-  "contractId": null,
-  "sellAmount": 0,
-  "status": 1,
+  "pid": 1,
   "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=95d3036dc6282a14fda223c3b55284be&imgtype=0&src=http%3A%2F%2Fimg4.vipshop.com%2Fupload%2Fmerchandise%2F27600%2FZIMMUR-ZMCQ2028-2.jpg",
   "stockQuantity": 939,
-  "lables": [
-    "时尚",
-    "潮流"
-  ],
   "maxPrice": 199.0000,
   "minPrice": 699.0000,
   "skus": [
     {
-      "id": 1,
-      "commodityId": 1,
-      "spec": "尺码:M,颜色:绿松石蓝色",
+      "sid": 1,
       "price": 199.0000,
-      "pictureId": null,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=95d3036dc6282a14fda223c3b55284be&imgtype=0&src=http%3A%2F%2Fimg4.vipshop.com%2Fupload%2Fmerchandise%2F27600%2FZIMMUR-ZMCQ2028-2.jpg",
       "stockQuantity": 133,
       "attributes": [
@@ -45,11 +22,8 @@
       ]
     },
     {
-      "id": 2,
-      "commodityId": 1,
-      "spec": "尺码:M,颜色:灰色",
+      "sid": 2,
       "price": 399.0000,
-      "pictureId": null,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=76331db1c1a7b9edad2583bd95d7e634&imgtype=0&src=http%3A%2F%2Fi1.ygimg.cn%2Fpics%2Fnowhere%2F2013%2F99862821%2F99862821_01_l.jpg",
       "stockQuantity": 333,
       "attributes": [
@@ -64,11 +38,8 @@
       ]
     },
     {
-      "id": 3,
-      "commodityId": 1,
-      "spec": "尺码:L,颜色:绿松石蓝色",
+      "sid": 3,
       "price": 199.0000,
-      "pictureId": null,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=9d33c2c3adbf9d6af01f589777cd0bff&imgtype=0&src=http%3A%2F%2Fimg2.vipshop.com%2Fupload%2Fmerchandise%2F34424%2FZIMMUR-Z12CQW145WC-2.jpg",
       "stockQuantity": 23,
       "attributes": [
@@ -83,11 +54,8 @@
       ]
     },
     {
-      "id": 4,
-      "commodityId": 1,
-      "spec": "尺码:L,颜色:灰色",
+      "sid": 4,
       "price": 499.0000,
-      "pictureId": null,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109966&di=ada65d9d4dbbfaf5e46944f469c64ebf&imgtype=0&src=http%3A%2F%2Fwww.bjzwx.com%2Fuploadfile%2F2017%2F1219%2F20171219082705892.jpg",
       "stockQuantity": 323,
       "attributes": [
@@ -102,11 +70,8 @@
       ]
     },
     {
-      "id": 5,
-      "commodityId": 1,
-      "spec": "尺码:L,颜色:灰色",
+      "sid": 5,
       "price": 699.0000,
-      "pictureId": null,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=158716506d68be6d18f033ab6a6518a7&imgtype=0&src=http%3A%2F%2Fa.vpimg3.com%2Fupload%2Fmerchandise%2F120170%2FOSA-SW332654065A-1.jpg",
       "stockQuantity": 3,
       "attributes": [
@@ -121,11 +86,8 @@
       ]
     },
     {
-      "id": 6,
-      "commodityId": 1,
-      "spec": "尺码:L,颜色:灰色",
+      "sid": 6,
       "price": 699.0000,
-      "pictureId": null,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=f5851b42bed9833f5f9e2a8884d027d8&imgtype=0&src=http%3A%2F%2Fimg.11665.com%2Fimg04_p%2Fi4%2FT1EX43FrFnXXXXXXXX_%2521%25210-item_pic.jpg",
       "stockQuantity": 1,
       "attributes": [
@@ -140,11 +102,8 @@
       ]
     },
     {
-      "id": 7,
-      "commodityId": 1,
-      "spec": "尺码:L,颜色:灰色",
+      "sid": 7,
       "price": 699.0000,
-      "pictureId": null,
       "pictureUrl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564393109965&di=fff806632f0c299b7a3572a3900360f4&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201411%2F07%2F20141107201918_8Q4fV.jpeg",
       "stockQuantity": 123,
       "attributes": [
@@ -158,8 +117,5 @@
         }
       ]
     }
-  ],
-  "attrs": null,
-  "statusName": null,
-  "categoryName": null
+  ]
 }

@@ -107,8 +107,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="@dimen/dp16"
                         android:layout_marginLeft="@dimen/dp16"
-                        android:text="@string/product_detail_sku_quantity"
-                        android:textColor="@color/comm_text_gray_dark"
+                        android:text="@string/sku_quantity"
+                        android:textColor="@color/m333333"
                         android:textSize="@dimen/sp16"
                         android:textStyle="bold" />
 
@@ -121,7 +121,7 @@
                         android:layout_marginLeft="@dimen/dp6"
                         android:layout_toEndOf="@id/tv_sku_quantity_label"
                         android:layout_toRightOf="@id/tv_sku_quantity_label"
-                        android:textColor="@color/comm_text_gray"
+                        android:textColor="@color/m666666"
                         android:textSize="@dimen/sp12" />
 
                     <LinearLayout
@@ -139,7 +139,7 @@
                             android:id="@+id/btn_sku_quantity_minus"
                             android:layout_width="@dimen/dp28"
                             android:layout_height="@dimen/dp28"
-                            android:background="@drawable/com_sku_quantity_minus_selector"
+                            android:background="@drawable/sku_quantity_minus_selector"
                             android:enabled="false"
                             android:gravity="center"
                             android:padding="0dp"
@@ -153,7 +153,7 @@
                             android:layout_height="@dimen/dp28"
                             android:layout_marginLeft="@dimen/dp2"
                             android:layout_marginRight="@dimen/dp2"
-                            android:background="@drawable/com_sku_quantity_input_selector"
+                            android:background="@drawable/sku_quantity_input_selector"
                             android:ellipsize="end"
                             android:gravity="center"
                             android:imeOptions="actionDone"
@@ -163,7 +163,7 @@
                             android:maxLines="1"
                             android:minWidth="@dimen/dp21"
                             android:text="1"
-                            android:textColor="@color/comm_text_gray_dark"
+                            android:textColor="@color/m333333"
                             android:textSize="@dimen/sp16"
                             android:textStyle="bold" />
 
@@ -173,7 +173,7 @@
                             android:layout_height="@dimen/dp28"
                             android:layout_marginEnd="@dimen/dp16"
                             android:layout_marginRight="@dimen/dp16"
-                            android:background="@drawable/com_sku_quantity_plus_selector"
+                            android:background="@drawable/sku_quantity_plus_selector"
                             android:gravity="center"
                             android:padding="0dp"
                             android:text="＋"

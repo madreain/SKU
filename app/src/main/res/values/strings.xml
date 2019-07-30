@@ -2,13 +2,7 @@
     <string name="app_name">SKU</string>
     <string name="comm_price_format">¥ %s</string>
     <string name="sure_buy">确认购买</string>
-    <string name="product_detail">商品详情</string>
-    <string name="product_detail_sku_quantity">购买数量</string>
-    <string name="product_detail_sku_confirm">确定</string>
-    <string name="product_detail_sku_recommend_price">价格：¥%1$s/%2$s</string>
-    <string name="product_detail_sku_stock">(库存:%1$s)</string>
-    <string name="product_detail_sku_quantity_over">购买数量超出最大库存，请修改购买数量</string>
-    <string name="product_detail_sku_quantity_empty">购买数量不能为空</string>
-    <string name="product_detail_sku_add_succeed">商品添加成功，请前往进货单查看</string>
+    <string name="sku_quantity">购买数量</string>
+    <string name="sku_stock">(库存:%1$s)</string>
 
 </resources>
