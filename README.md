@@ -35,9 +35,14 @@ SKU相关数据大致如下，其他参数可根据自身项目自由扩展
 
 相关设置：
 
+1.不同状态显示的设置
 sku_item_text_selector.xml                   sku单item字体显示的三种状态设置
 sku_item_selector.xml                        sku单item显示的三种状态设置
 quantity_operator_text_selector.xml          加减按钮的状态设置
 sku_quantity_input_selector.xml              输入框两种输入状态设置
 sku_quantity_minus_selector.xml              减按钮的背景状态设置
 sku_quantity_plus_selector.xml               加按钮的背景状态设置
+
+2.最大高度、最小高度设置
+SkuMaxHeightScrollView中可在xml中设置maxSkuHeight、minSkuHeight，而SkuSelectScrollView继承自SkuMaxHeightScrollView也可直接设置
+
