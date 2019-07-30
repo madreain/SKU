@@ -93,8 +93,8 @@
                     android:id="@+id/scroll_sku_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:maxSkuHeight="300"
-                    app:minSkuHeight="100"
+                    app:maxSkuHeight="230"
+                    app:minSkuHeight="88"
                     android:layout_marginTop="5dp" />
 
                 <RelativeLayout
