@@ -365,8 +365,6 @@ public class ProductSkuDialog extends Dialog {
         window.setGravity(Gravity.BOTTOM);
         window.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         window.getDecorView().setPadding(0, 0, 0, 0);
-        // KeyboardConflictCompat.assistWindow(getWindow());
-//        AppUtils.transparencyBar(getWindow());
     }
 
     public interface Callback {
