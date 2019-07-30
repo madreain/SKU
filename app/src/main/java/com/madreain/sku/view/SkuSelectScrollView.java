@@ -49,15 +49,6 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
     }
 
     /**
-     * 设置SkuView委托，MVVM + Databinding模式下使用
-     *
-     * @param delegate
-     */
-    public void setSkuViewDelegate(SkuViewDelegate delegate) {
-        this.listener = delegate.getListener();
-    }
-
-    /**
      * 设置监听接口
      *
      * @param listener {@link OnSkuListener}
