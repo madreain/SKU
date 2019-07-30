@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onAdded(Sku sku, int quantity) {
                     //立即购买再跳转到
-
+                    Toast.makeText(MainActivity.this, "添加购物车成功 "+sku.toString(), Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void reUnSelect() {
-
 
                 }
             });
