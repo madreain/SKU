@@ -46,3 +46,14 @@ sku_quantity_plus_selector.xml               加按钮的背景状态设置
 2.最大高度、最小高度设置
 SkuMaxHeightScrollView中可在xml中设置maxSkuHeight、minSkuHeight，而SkuSelectScrollView继承自SkuMaxHeightScrollView也可直接设置
 
+```
+<com.madreain.sku.view.SkuSelectScrollView
+     android:id="@+id/scroll_sku_list"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     app:maxSkuHeight="230"
+     app:minSkuHeight="88"
+     android:layout_marginTop="5dp" />
+```
+
+
