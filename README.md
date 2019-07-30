@@ -33,5 +33,11 @@ SKU相关数据大致如下，其他参数可根据自身项目自由扩展
 
 ```
 
+相关设置：
 
-
+sku_item_text_selector.xml                   sku单item字体显示的三种状态设置
+sku_item_selector.xml                        sku单item显示的三种状态设置
+quantity_operator_text_selector.xml          加减按钮的状态设置
+sku_quantity_input_selector.xml              输入框两种输入状态设置
+sku_quantity_minus_selector.xml              减按钮的背景状态设置
+sku_quantity_plus_selector.xml               加按钮的背景状态设置
