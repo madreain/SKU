@@ -17,5 +17,9 @@
         <attr name="maxRows" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="SkuMaxHeightScrollView">
+        <attr name="maxSkuHeight" format="integer"/>
+        <attr name="minSkuHeight" format="integer"/>
+    </declare-styleable>
 
 </resources>

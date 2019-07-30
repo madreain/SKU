@@ -1,10 +1,12 @@
 package com.madreain.sku.widget;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ScrollView;
 
+import com.madreain.sku.R;
 import com.madreain.sku.utils.DisplayUtil;
 
 /**
@@ -15,12 +17,22 @@ import com.madreain.sku.utils.DisplayUtil;
  */
 public class SkuMaxHeightScrollView extends ScrollView {
 
+    private int maxHeight;
+    private int minHeight;
+
     public SkuMaxHeightScrollView(Context context) {
-        super(context);
+        this(context, null);
     }
 
     public SkuMaxHeightScrollView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        TypedArray typedArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.SkuMaxHeightScrollView, 0, 0);
+        try {
+            maxHeight = typedArray.getInt(R.styleable.SkuMaxHeightScrollView_maxSkuHeight, 220);
+            minHeight = typedArray.getInt(R.styleable.SkuMaxHeightScrollView_minSkuHeight, 75);
+        } finally {
+            typedArray.recycle();
+        }
     }
 
     @Override
@@ -35,11 +47,11 @@ public class SkuMaxHeightScrollView extends ScrollView {
                 height = h;
         }
         float heightDp = DisplayUtil.px2dp(getContext(), height);
-        if (heightDp > 220) {
-            int maxHeight = DisplayUtil.dp2px(getContext(), 220);
+        maxHeight = DisplayUtil.dp2px(getContext(), maxHeight);
+        minHeight = DisplayUtil.dp2px(getContext(), minHeight);
+        if (heightDp > maxHeight) {
             setMeasuredDimension(width, maxHeight);
-        } else if (heightDp < 75) {
-            int minHeight = DisplayUtil.dp2px(getContext(), 75);
+        } else if (heightDp < minHeight) {
             setMeasuredDimension(width, minHeight);
         } else {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
