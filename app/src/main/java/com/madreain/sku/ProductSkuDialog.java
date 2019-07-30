@@ -91,6 +91,7 @@ public class ProductSkuDialog extends Dialog {
                 dismiss();
             }
         });
+        //减少
         btnSkuQuantityMinus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,6 +108,7 @@ public class ProductSkuDialog extends Dialog {
                 }
             }
         });
+        //增加
         btnSkuQuantityPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,6 +125,7 @@ public class ProductSkuDialog extends Dialog {
                 }
             }
         });
+        //输入
         etSkuQuantityInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -150,6 +153,7 @@ public class ProductSkuDialog extends Dialog {
                 return false;
             }
         });
+        //sku整体的点击事件
         scrollSkuList.setListener(new OnSkuListener() {
             @Override
             public void onUnselected(SkuAttribute unselectedAttribute) {
@@ -169,12 +173,6 @@ public class ProductSkuDialog extends Dialog {
                 }
                 tvSkuInfo.setText(selected);
                 btnSubmit.setEnabled(false);
-//                String quantity = etSkuQuantityInput.getText().toString();
-//                if (!TextUtils.isEmpty(quantity)) {
-//                    updateQuantityOperator(Integer.valueOf(quantity));
-//                } else {
-//                    updateQuantityOperator(0);
-//                }
                 etSkuQuantityInput.setText("1");
                 updateQuantityOperator(1);
             }
@@ -216,21 +214,16 @@ public class ProductSkuDialog extends Dialog {
                 callback.onSelect(builder.toString());
                 tvSkuQuantity.setText(String.format(stockQuantityFormat, selectedSku.getStockQuantity()));
                 btnSubmit.setEnabled(true);
-//                String quantity = etSkuQuantityInput.getText().toString();
-//                if (!TextUtils.isEmpty(quantity)) {
-//                    updateQuantityOperator(Integer.valueOf(quantity));
-//                } else {
-//                    updateQuantityOperator(0);
-//                }
-                if (sku.getStockQuantity()>=1){
+                if (sku.getStockQuantity() >= 1) {
                     etSkuQuantityInput.setText("1");
                     updateQuantityOperator(1);
-                }else {
+                } else {
                     etSkuQuantityInput.setText("0");
                     updateQuantityOperator(0);
                 }
             }
         });
+        //添加
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -249,6 +242,11 @@ public class ProductSkuDialog extends Dialog {
         });
     }
 
+    /**
+     * 设置数据
+     * @param product
+     * @param callback
+     */
     public void setData(final ProductData product, Callback callback) {
         this.product = product;
         this.skuList = product.getSkus();
@@ -259,6 +257,9 @@ public class ProductSkuDialog extends Dialog {
         updateQuantityOperator(1);
     }
 
+    /**
+     * 更新数据
+     */
     private void updateSkuData() {
         scrollSkuList.setSkuList(product.getSkus());
         //默认选择第一个

@@ -59,7 +59,7 @@ public class SkuItemLayout extends LinearLayout {
         attributeNameParams.topMargin = DisplayUtil.dp2px(context, 24);
         attributeNameTv.setLayoutParams(attributeNameParams);
         addView(attributeNameTv);
-
+        //sku属性展示
         attributeValueLayout = new FlowLayout(context);
         attributeValueLayout.setMinimumHeight(DisplayUtil.dp2px(context, 25));
         attributeValueLayout.setChildSpacing(DisplayUtil.dp2px(context, 15));
@@ -71,7 +71,7 @@ public class SkuItemLayout extends LinearLayout {
         attributeValueParams.bottomMargin = DisplayUtil.dp2px(context, 10);
         attributeValueLayout.setLayoutParams(attributeValueParams);
         addView(attributeValueLayout);
-
+        //横线的展示
         View line = new View(context);
         line.setBackgroundResource(R.color.m202F2F39);
         LayoutParams lineParams = new LayoutParams(LayoutParams.MATCH_PARENT, 1);
@@ -82,10 +82,12 @@ public class SkuItemLayout extends LinearLayout {
         addView(line);
     }
 
-    public void setListener(OnSkuItemSelectListener listener) {
-        this.listener = listener;
-    }
-
+    /**
+     * sku属性展示
+     * @param position
+     * @param attributeName
+     * @param attributeValueList
+     */
     public void buildItemLayout(int position, String attributeName, List<String> attributeValueList) {
         attributeNameTv.setText(attributeName);
         attributeValueLayout.removeAllViewsInLayout();
@@ -168,6 +170,11 @@ public class SkuItemLayout extends LinearLayout {
         return attributeNameTv.getText().toString();
     }
 
+    /**
+     * sku点击
+     * @param position
+     * @param view
+     */
     private void onSkuItemClicked(int position, SkuItemView view) {
         boolean selected = !view.isSelected();
         SkuAttribute attribute = new SkuAttribute();
@@ -176,6 +183,9 @@ public class SkuItemLayout extends LinearLayout {
         listener.onSelect(position, selected, attribute);
     }
 
+    /**
+     * 点击事件
+     */
     private class ItemClickListener implements OnClickListener {
         private int position;
         private SkuItemView view;
@@ -191,7 +201,12 @@ public class SkuItemLayout extends LinearLayout {
         }
     }
 
+    public void setOnSkuItemSelectListener(OnSkuItemSelectListener listener) {
+        this.listener = listener;
+    }
+
     interface OnSkuItemSelectListener {
         void onSelect(int position, boolean select, SkuAttribute attribute);
     }
+
 }

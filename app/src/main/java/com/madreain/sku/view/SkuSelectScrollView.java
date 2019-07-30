@@ -80,7 +80,7 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
             ));
             itemLayout.buildItemLayout(index++, entry.getKey(), entry.getValue());
-            itemLayout.setListener(this);
+            itemLayout.setOnSkuItemSelectListener(this);
             skuContainerLayout.addView(itemLayout);
             // 初始状态下，所有属性信息设置为空
             selectedAttributeList.add(new SkuAttribute(entry.getKey(), ""));

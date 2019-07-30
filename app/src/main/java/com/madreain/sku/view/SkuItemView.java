@@ -57,4 +57,5 @@ public class SkuItemView extends TextView {
         this.attributeValue = attributeValue;
         setText(attributeValue);
     }
+
 }
