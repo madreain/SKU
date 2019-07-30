@@ -11,6 +11,12 @@ import com.madreain.sku.bean.Sku;
 
 import butterknife.ButterKnife;
 
+/**
+ * @author madreain
+ * @date 2019-07-27.
+ * module：
+ * description：
+ */
 public class MainActivity extends AppCompatActivity {
 
     private TextView tv;
