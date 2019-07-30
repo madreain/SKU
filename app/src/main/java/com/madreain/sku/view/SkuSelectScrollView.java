@@ -103,7 +103,7 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
      * 将sku根据属性名进行分组
      *
      * @param list
-     * @return 如{ "颜色": {"白色", "红色", "黑色"}, "尺寸": {"M", "L", "XL", "XXL"}}
+     * @return 如{ "颜色": {"白色", "红色", "黑色"}, "尺寸": {"XS","S","M", "L", "XL", "XXL"}}
      */
     private Map<String, List<String>> getSkuGroupByName(List<Sku> list) {
         Map<String, List<String>> dataMap = new LinkedHashMap<>();
