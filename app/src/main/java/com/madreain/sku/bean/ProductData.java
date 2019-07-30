@@ -23,64 +23,19 @@ import java.util.List;
 @Keep
 public class ProductData {
 
-    private long id;
-
-    private String code;
-
-    private boolean specTag;
-
-    private String operatorId;
-
-    private String shopId;
-
-    private String name;
-
-    private int categoryId;
-
-    private String summary;
-
-    private String label;
-
-    private boolean discountFlag;
-
-    private int houseArea;
-
-    private boolean sellTimeLimitFlag;
-
-    private String sellTimeStart;
-
-    private String sellTimeEnd;
-
-    private String contractId;
-
-    private int sellAmount;
-
-    private int status;
-
-    private List<String> lables;
-
-    private List<String> pictureUrls;
-
+    //主图url
     private String pictureUrl;
 
+    //最高价格
     private int maxPrice;
 
+    //最低价格
     private int minPrice;
 
+    //sku属性
     private List<Sku> skus;
 
-    private String attrs;
-
-    private String detailLink;
-
-    private List<String> houseAreas;
-
-    private String statusName;
-
-    private String categoryName;
-
-    private String attrsStr;
-
+    //数量
     private int stockQuantity;
 
     public int getStockQuantity() {
@@ -121,165 +76,12 @@ public class ProductData {
         return resultString;
     }
 
-
-    public String getAttrsStr() {
-        return attrsStr;
-    }
-
-    public void setAttrsStr(String attrsStr) {
-        this.attrsStr = attrsStr;
-    }
-
     public String getPictureUrl() {
         return pictureUrl;
     }
 
     public void setPictureUrl(String pictureUrl) {
         this.pictureUrl = pictureUrl;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public boolean isSpecTag() {
-        return specTag;
-    }
-
-    public void setSpecTag(boolean specTag) {
-        this.specTag = specTag;
-    }
-
-    public String getOperatorId() {
-        return operatorId;
-    }
-
-    public void setOperatorId(String operatorId) {
-        this.operatorId = operatorId;
-    }
-
-    public String getShopId() {
-        return shopId;
-    }
-
-    public void setShopId(String shopId) {
-        this.shopId = shopId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getCategoryId() {
-        return categoryId;
-    }
-
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public String getSummary() {
-        return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
-
-    public String getLabel() {
-        return label;
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
-    }
-
-    public boolean isDiscountFlag() {
-        return discountFlag;
-    }
-
-    public void setDiscountFlag(boolean discountFlag) {
-        this.discountFlag = discountFlag;
-    }
-
-    public int getHouseArea() {
-        return houseArea;
-    }
-
-    public void setHouseArea(int houseArea) {
-        this.houseArea = houseArea;
-    }
-
-    public boolean isSellTimeLimitFlag() {
-        return sellTimeLimitFlag;
-    }
-
-    public void setSellTimeLimitFlag(boolean sellTimeLimitFlag) {
-        this.sellTimeLimitFlag = sellTimeLimitFlag;
-    }
-
-    public String getSellTimeStart() {
-        return sellTimeStart;
-    }
-
-    public void setSellTimeStart(String sellTimeStart) {
-        this.sellTimeStart = sellTimeStart;
-    }
-
-    public String getSellTimeEnd() {
-        return sellTimeEnd;
-    }
-
-    public void setSellTimeEnd(String sellTimeEnd) {
-        this.sellTimeEnd = sellTimeEnd;
-    }
-
-    public String getContractId() {
-        return contractId;
-    }
-
-    public void setContractId(String contractId) {
-        this.contractId = contractId;
-    }
-
-    public int getSellAmount() {
-        return sellAmount;
-    }
-
-    public void setSellAmount(int sellAmount) {
-        this.sellAmount = sellAmount;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public List<String> getLables() {
-        return lables;
-    }
-
-    public void setLables(List<String> lables) {
-        this.lables = lables;
     }
 
     public int getMaxPrice() {
@@ -306,51 +108,4 @@ public class ProductData {
         this.skus = skus;
     }
 
-    public String getAttrs() {
-        return attrs;
-    }
-
-    public void setAttrs(String attrs) {
-        this.attrs = attrs;
-    }
-
-    public String getDetailLink() {
-        return detailLink;
-    }
-
-    public void setDetailLink(String detailLink) {
-        this.detailLink = detailLink;
-    }
-
-    public List<String> getHouseAreas() {
-        return houseAreas;
-    }
-
-    public void setHouseAreas(List<String> houseAreas) {
-        this.houseAreas = houseAreas;
-    }
-
-    public String getStatusName() {
-        return statusName;
-    }
-
-    public void setStatusName(String statusName) {
-        this.statusName = statusName;
-    }
-
-    public String getCategoryName() {
-        return categoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
-    }
-
-    public List<String> getPictureUrls() {
-        return pictureUrls;
-    }
-
-    public void setPictureUrls(List<String> pictureUrls) {
-        this.pictureUrls = pictureUrls;
-    }
 }

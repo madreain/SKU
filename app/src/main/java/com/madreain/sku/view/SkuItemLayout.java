@@ -13,7 +13,6 @@ import android.widget.TextView;
 import com.madreain.sku.R;
 import com.madreain.sku.bean.SkuAttribute;
 import com.madreain.sku.utils.DisplayUtil;
-import com.madreain.sku.utils.ViewUtils;
 import com.madreain.sku.widget.FlowLayout;
 
 import java.util.List;
@@ -49,7 +48,6 @@ public class SkuItemLayout extends LinearLayout {
         setOrientation(VERTICAL);
         //类目的展示
         attributeNameTv = new TextView(context);
-        attributeNameTv.setId(ViewUtils.generateViewId());
         attributeNameTv.setTextColor(context.getResources().getColor(R.color.m2F2F39));
         attributeNameTv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
         attributeNameTv.setIncludeFontPadding(false);
@@ -63,7 +61,6 @@ public class SkuItemLayout extends LinearLayout {
         addView(attributeNameTv);
 
         attributeValueLayout = new FlowLayout(context);
-        attributeValueLayout.setId(ViewUtils.generateViewId());
         attributeValueLayout.setMinimumHeight(DisplayUtil.dp2px(context, 25));
         attributeValueLayout.setChildSpacing(DisplayUtil.dp2px(context, 15));
         attributeValueLayout.setRowSpacing(DisplayUtil.dp2px(context, 15));
@@ -94,7 +91,6 @@ public class SkuItemLayout extends LinearLayout {
         attributeValueLayout.removeAllViewsInLayout();
         for (int i = 0; i < attributeValueList.size(); i++) {
             SkuItemView itemView = new SkuItemView(getContext());
-            itemView.setId(ViewUtils.generateViewId());
             itemView.setAttributeValue(attributeValueList.get(i));
             itemView.setOnClickListener(new ItemClickListener(position, itemView));
             itemView.setLayoutParams(new FlowLayout.LayoutParams(

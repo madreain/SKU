@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 
 import com.madreain.sku.bean.Sku;
 import com.madreain.sku.bean.SkuAttribute;
-import com.madreain.sku.utils.ViewUtils;
 import com.madreain.sku.widget.SkuMaxHeightScrollView;
 
 import java.util.Iterator;
@@ -44,7 +43,6 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
         setFillViewport(true);
         setOverScrollMode(OVER_SCROLL_NEVER);
         skuContainerLayout = new LinearLayout(context, attrs);
-        skuContainerLayout.setId(ViewUtils.generateViewId());
         skuContainerLayout.setOrientation(LinearLayout.VERTICAL);
         skuContainerLayout.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT));
         addView(skuContainerLayout);
@@ -87,7 +85,6 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
 
             // 构建sku视图
             SkuItemLayout itemLayout = new SkuItemLayout(getContext());
-            itemLayout.setId(ViewUtils.generateViewId());
             itemLayout.setLayoutParams(new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
             ));
