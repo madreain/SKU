@@ -169,12 +169,14 @@ public class ProductSkuDialog extends Dialog {
                 }
                 tvSkuInfo.setText(selected);
                 btnSubmit.setEnabled(false);
-                String quantity = etSkuQuantityInput.getText().toString();
-                if (!TextUtils.isEmpty(quantity)) {
-                    updateQuantityOperator(Integer.valueOf(quantity));
-                } else {
-                    updateQuantityOperator(0);
-                }
+//                String quantity = etSkuQuantityInput.getText().toString();
+//                if (!TextUtils.isEmpty(quantity)) {
+//                    updateQuantityOperator(Integer.valueOf(quantity));
+//                } else {
+//                    updateQuantityOperator(0);
+//                }
+                etSkuQuantityInput.setText("1");
+                updateQuantityOperator(1);
             }
 
             @Override
@@ -190,6 +192,8 @@ public class ProductSkuDialog extends Dialog {
                     tvSkuSellingPrice.setText(String.format(priceFormat, product.getMinPrice()));
                 }
                 tvSkuInfo.setText(selected);
+                etSkuQuantityInput.setText("1");
+                updateQuantityOperator(1);
             }
 
             @Override
@@ -212,10 +216,17 @@ public class ProductSkuDialog extends Dialog {
                 callback.onSelect(builder.toString());
                 tvSkuQuantity.setText(String.format(stockQuantityFormat, selectedSku.getStockQuantity()));
                 btnSubmit.setEnabled(true);
-                String quantity = etSkuQuantityInput.getText().toString();
-                if (!TextUtils.isEmpty(quantity)) {
-                    updateQuantityOperator(Integer.valueOf(quantity));
-                } else {
+//                String quantity = etSkuQuantityInput.getText().toString();
+//                if (!TextUtils.isEmpty(quantity)) {
+//                    updateQuantityOperator(Integer.valueOf(quantity));
+//                } else {
+//                    updateQuantityOperator(0);
+//                }
+                if (sku.getStockQuantity()>=1){
+                    etSkuQuantityInput.setText("1");
+                    updateQuantityOperator(1);
+                }else {
+                    etSkuQuantityInput.setText("0");
                     updateQuantityOperator(0);
                 }
             }
