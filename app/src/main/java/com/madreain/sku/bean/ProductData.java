@@ -52,7 +52,6 @@ public class ProductData {
         }.getType());
     }
 
-
     private static String readTextFromSDcard(Context context) {
         String resultString = null;
         InputStreamReader inputStreamReader;
