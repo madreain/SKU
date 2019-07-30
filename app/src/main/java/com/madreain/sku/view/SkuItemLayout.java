@@ -89,10 +89,9 @@ public class SkuItemLayout extends LinearLayout {
     public void buildItemLayout(int position, String attributeName, List<String> attributeValueList) {
         attributeNameTv.setText(attributeName);
         attributeValueLayout.removeAllViewsInLayout();
-        int attributeValueListSize = attributeValueList.size();
-        for (int i = 0; i < attributeValueListSize; i++) {
+        for (String attributeValue : attributeValueList) {
             SkuItemView itemView = new SkuItemView(getContext());
-            itemView.setAttributeValue(attributeValueList.get(i));
+            itemView.setAttributeValue(attributeValue);
             itemView.setOnClickListener(new ItemClickListener(position, itemView));
             itemView.setLayoutParams(new FlowLayout.LayoutParams(
                     FlowLayout.LayoutParams.WRAP_CONTENT,

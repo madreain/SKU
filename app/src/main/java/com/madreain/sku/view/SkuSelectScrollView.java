@@ -159,16 +159,14 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
     private void optionLayoutEnableStatusSingleProperty() {
         SkuItemLayout itemLayout = (SkuItemLayout) skuContainerLayout.getChildAt(0);
         // 遍历sku列表
-        int skuListSize = skuList.size();
-        for (int i = 0; i < skuListSize; i++) {
+        for (Sku sku : skuList) {
             // 属性值是否可点击flag
-            Sku sku = skuList.get(i);
-            List<SkuAttribute> attributeBeanList = skuList.get(i).getAttributes();
+            List<SkuAttribute> attributeBeanList = sku.getAttributes();
             //库存判断
-//            if (sku.getStockQuantity() > 0) {
-            String attributeValue = attributeBeanList.get(0).getValue();
-            itemLayout.optionItemViewEnableStatus(attributeValue);
-//            }
+            if (sku.getStockQuantity() > 0) {
+                String attributeValue = attributeBeanList.get(0).getValue();
+                itemLayout.optionItemViewEnableStatus(attributeValue);
+            }
         }
     }
 
