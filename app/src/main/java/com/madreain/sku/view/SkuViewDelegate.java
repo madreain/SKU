@@ -18,5 +18,4 @@ public class SkuViewDelegate {
         this.listener = listener;
     }
 
-
 }

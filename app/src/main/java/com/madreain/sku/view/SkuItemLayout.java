@@ -89,7 +89,8 @@ public class SkuItemLayout extends LinearLayout {
     public void buildItemLayout(int position, String attributeName, List<String> attributeValueList) {
         attributeNameTv.setText(attributeName);
         attributeValueLayout.removeAllViewsInLayout();
-        for (int i = 0; i < attributeValueList.size(); i++) {
+        int attributeValueListSize = attributeValueList.size();
+        for (int i = 0; i < attributeValueListSize; i++) {
             SkuItemView itemView = new SkuItemView(getContext());
             itemView.setAttributeValue(attributeValueList.get(i));
             itemView.setOnClickListener(new ItemClickListener(position, itemView));
@@ -104,7 +105,8 @@ public class SkuItemLayout extends LinearLayout {
      * 清空是否可点击，选中状态
      */
     public void clearItemViewStatus() {
-        for (int i = 0; i < attributeValueLayout.getChildCount(); i++) {
+        int attributeValueLayoutChildCount = attributeValueLayout.getChildCount();
+        for (int i = 0; i < attributeValueLayoutChildCount; i++) {
             SkuItemView itemView = (SkuItemView) attributeValueLayout.getChildAt(i);
             itemView.setSelected(false);
             itemView.setEnabled(false);
@@ -117,7 +119,8 @@ public class SkuItemLayout extends LinearLayout {
      * @param attributeValue
      */
     public void optionItemViewEnableStatus(String attributeValue) {
-        for (int i = 0; i < attributeValueLayout.getChildCount(); i++) {
+        int attributeValueLayoutChildCount = attributeValueLayout.getChildCount();
+        for (int i = 0; i < attributeValueLayoutChildCount; i++) {
             SkuItemView itemView = (SkuItemView) attributeValueLayout.getChildAt(i);
             if (attributeValue.equals(itemView.getAttributeValue())) {
                 itemView.setEnabled(true);
@@ -131,7 +134,8 @@ public class SkuItemLayout extends LinearLayout {
      * @param selectValue
      */
     public void optionItemViewSelectStatus(SkuAttribute selectValue) {
-        for (int i = 0; i < attributeValueLayout.getChildCount(); i++) {
+        int attributeValueLayoutChildCount = attributeValueLayout.getChildCount();
+        for (int i = 0; i < attributeValueLayoutChildCount; i++) {
             SkuItemView itemView = (SkuItemView) attributeValueLayout.getChildAt(i);
             if (selectValue.getValue().equals(itemView.getAttributeValue())) {
                 itemView.setEnabled(true);
@@ -142,10 +146,12 @@ public class SkuItemLayout extends LinearLayout {
 
     /**
      * 当前属性集合是否有选中项
+     *
      * @return
      */
     public boolean isSelected() {
-        for (int i = 0; i < attributeValueLayout.getChildCount(); i++) {
+        int attributeValueLayoutChildCount = attributeValueLayout.getChildCount();
+        for (int i = 0; i < attributeValueLayoutChildCount; i++) {
             SkuItemView itemView = (SkuItemView) attributeValueLayout.getChildAt(i);
             if (itemView.isSelected()) {
                 return true;
@@ -156,6 +162,7 @@ public class SkuItemLayout extends LinearLayout {
 
     /**
      * 获取属性名称
+     *
      * @return
      */
     public String getAttributeName() {

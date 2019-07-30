@@ -137,7 +137,8 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
      * 重置所有属性的选中状态
      */
     private void clearAllLayoutStatus() {
-        for (int i = 0; i < skuContainerLayout.getChildCount(); i++) {
+        int skuContainerLayoutChildCount = skuContainerLayout.getChildCount();
+        for (int i = 0; i < skuContainerLayoutChildCount; i++) {
             SkuItemLayout itemLayout = (SkuItemLayout) skuContainerLayout.getChildAt(i);
             itemLayout.clearItemViewStatus();
         }
@@ -158,29 +159,33 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
     private void optionLayoutEnableStatusSingleProperty() {
         SkuItemLayout itemLayout = (SkuItemLayout) skuContainerLayout.getChildAt(0);
         // 遍历sku列表
-        for (int i = 0; i < skuList.size(); i++) {
+        int skuListSize = skuList.size();
+        for (int i = 0; i < skuListSize; i++) {
             // 属性值是否可点击flag
             Sku sku = skuList.get(i);
             List<SkuAttribute> attributeBeanList = skuList.get(i).getAttributes();
             //库存判断
 //            if (sku.getStockQuantity() > 0) {
-                String attributeValue = attributeBeanList.get(0).getValue();
-                itemLayout.optionItemViewEnableStatus(attributeValue);
+            String attributeValue = attributeBeanList.get(0).getValue();
+            itemLayout.optionItemViewEnableStatus(attributeValue);
 //            }
         }
     }
 
     private void optionLayoutEnableStatusMultipleProperties() {
-        for (int i = 0; i < skuContainerLayout.getChildCount(); i++) {
+        int skuContainerLayoutSize = skuContainerLayout.getChildCount();
+        for (int i = 0; i < skuContainerLayoutSize; i++) {
             SkuItemLayout itemLayout = (SkuItemLayout) skuContainerLayout.getChildAt(i);
             // 遍历sku列表
-            for (int j = 0; j < skuList.size(); j++) {
+            int skuListSize = skuList.size();
+            for (int j = 0; j < skuListSize; j++) {
                 // 属性值是否可点击flag
                 boolean flag = false;
                 Sku sku = skuList.get(j);
                 List<SkuAttribute> attributeBeanList = sku.getAttributes();
                 // 遍历选中信息列表
-                for (int k = 0; k < selectedAttributeList.size(); k++) {
+                int selectedAttributeListSize = selectedAttributeList.size();
+                for (int k = 0; k < selectedAttributeListSize; k++) {
                     // i = k，跳过当前属性，避免多次设置是否可点击
                     if (i == k) continue;
                     // 选中信息为空，则说明未选中，无法判断是否有不可点击的情形，跳过
@@ -208,7 +213,8 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
      * 设置所有属性的选中状态
      */
     private void optionLayoutSelectStatus() {
-        for (int i = 0; i < skuContainerLayout.getChildCount(); i++) {
+        int skuContainerLayoutSize = skuContainerLayout.getChildCount();
+        for (int i = 0; i < skuContainerLayoutSize; i++) {
             SkuItemLayout itemLayout = (SkuItemLayout) skuContainerLayout.getChildAt(i);
             itemLayout.optionItemViewSelectStatus(selectedAttributeList.get(i));
         }
@@ -234,7 +240,8 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
      * @return
      */
     public String getFirstUnelectedAttributeName() {
-        for (int i = 0; i < skuContainerLayout.getChildCount(); i++) {
+        int skuContainerLayoutSize = skuContainerLayout.getChildCount();
+        for (int i = 0; i < skuContainerLayoutSize; i++) {
             SkuItemLayout itemLayout = (SkuItemLayout) skuContainerLayout.getChildAt(i);
             if (!itemLayout.isSelected()) {
                 return itemLayout.getAttributeName();
@@ -257,7 +264,8 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
             List<SkuAttribute> attributeList = sku.getAttributes();
             // 将sku的属性列表与selectedAttributeList匹配，完全匹配则为已选中sku
             boolean flag = true;
-            for (int i = 0; i < attributeList.size(); i++) {
+            int attributeListSize = attributeList.size();
+            for (int i = 0; i < attributeListSize; i++) {
                 if (!isSameSkuAttribute(attributeList.get(i), selectedAttributeList.get(i))) {
                     flag = false;
                 }
@@ -325,6 +333,7 @@ public class SkuSelectScrollView extends SkuMaxHeightScrollView implements SkuIt
 
     /**
      * 获取当前选择的属性信息
+     *
      * @return
      */
     public List<SkuAttribute> getSelectedAttributeList() {

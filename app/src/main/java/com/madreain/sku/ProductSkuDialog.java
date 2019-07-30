@@ -269,8 +269,8 @@ public class ProductSkuDialog extends Dialog {
             btnSubmit.setEnabled(selectedSku.getStockQuantity() > 0);
             List<SkuAttribute> attributeList = selectedSku.getAttributes();
             StringBuilder builder = new StringBuilder();
-            int size = attributeList.size();
-            for (int i = 0; i < size; i++) {
+            int attributeListSize = attributeList.size();
+            for (int i = 0; i < attributeListSize; i++) {
                 if (i != 0) {
                     builder.append("　");
                 }
@@ -317,8 +317,8 @@ public class ProductSkuDialog extends Dialog {
             //是否有属性是选中的
             setHaveSelect(false);
             StringBuilder stringBuilder = new StringBuilder();
-            int size = skuAttributeList.size();
-            for (int i = 0; i < size; i++) {
+            int skuAttributeListSize = skuAttributeList.size();
+            for (int i = 0; i < skuAttributeListSize; i++) {
                 SkuAttribute skuAttribute = skuAttributeList.get(i);
                 if (i != 0) {
                     stringBuilder.append("  ");
